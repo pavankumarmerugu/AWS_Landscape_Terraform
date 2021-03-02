@@ -1,5 +1,7 @@
 # AWS POC Landscape
 
+![image][AWS_Landscape.jpg]
+
 This terraform script automates an AWS infrastructure Landscape for the test deployments.
 
 The following modules are deployed through the terraform scripts in this repository 
@@ -58,6 +60,6 @@ The following modules are deployed through the terraform scripts in this reposit
         - __Example:__ [“10.0.1.50”, “10.0.2.50”]
 
     - __ami_id__ = "  "   -> the machine image used for private and public EC2 instances
-        - __Example:__ “ami-0a6dc7529cd559185”]
+        - __Example:__ “ami-0a6dc7529cd559185”
 
 
