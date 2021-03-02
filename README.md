@@ -35,6 +35,8 @@ The following modules are deployed through the terraform scripts in this reposit
 
 ## Terraform Landscape deployment  ##
 
+### Pre-configuration ###
+
 * In __main.tf__ file located under __modules-2202__ directory, the profile of the provider needs to be configured to deploy the test landscape
     provider "aws" {
         profile = " " *** -> AWS access key needs to be configured to initialize the scripts ***
@@ -61,5 +63,39 @@ The following modules are deployed through the terraform scripts in this reposit
 
     - __ami_id__ = "  "   -> the machine image used for private and public EC2 instances
         - __Example:__ “ami-0a6dc7529cd559185”
+
+## Usage ##
+
+### To deploy a terraform Landscape, follow the steps below, ###
+
+* __Initialization__
+    - initializes the working directory where the terraform files are configured. Initialization performs several tasks to prepare a directory, including accessing state in the configured backend, downloading and installing provider plugins, and downloading modules. 
+    Goto the __modules.*__ folder, where __main.tf__ is located and enter the following command
+        
+        ```
+        terraform init
+        ```
+* __Plan__
+    - Terraform plan creates an execution plan for the configuration declared in the terraform directory and gives the desired state before provisioning or changing infrastructure
+
+        ```
+        terraform plan
+        ```
+
+* __Apply__
+    - Terraform apply achieves the desired state by configuring the resources defined within the cloud providers mentioned in the configuration files
+
+        ```
+        terraform apply
+        ```
+
+* __Destroy__
+    - Terraform destroy is to destroy the configured infrastructure managed by terraform configuration files
+
+        ```
+        terraform destroy
+        ```
+
+
 
 
