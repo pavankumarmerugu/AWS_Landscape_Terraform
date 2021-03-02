@@ -1,6 +1,6 @@
 # AWS POC Landscape
 
-![][images/AWS_Landscape.jpg]
+![](images/AWS_Landscape.jpg)
 
 This terraform script automates an AWS infrastructure Landscape for the test deployments.
 
